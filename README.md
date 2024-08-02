@@ -29,9 +29,9 @@ I used a number of quantitative metrics to measure classification power of the b
 |-----------------------|------------------------|-----------------------|-------------------------|---------------------------|----------------------|
 | **CountVec + FCC**    | 0.59                   | 0.56                  | 0.57                    | 0.59                      | 0.11                 |
 | **TF-IDF + LR**       | 0.60                   | 0.57                  | 0.59                    | 0.60                      | 0.28                 |
+| **XLNet**             | 0.57                   | 0.57                  | 0.58                    | 0.58                      | 0.30                 |
 | **DistilBERT**        | 0.60                   | 0.58                  | 0.58                    | 0.60                      | 0.22                 |
 | **KeyBERT + DistilBERT** | **0.64**            | **0.64**              | **0.64**                | **0.64**                  | **0.10**             |
-| **XLNet**             | 0.57                   | 0.57                  | 0.58                    | 0.58                      | 0.30                 |
 
 ### Table 2: Results using Training and Validation Set 2 to predict Senate Proposed Bills
 
@@ -39,9 +39,9 @@ I used a number of quantitative metrics to measure classification power of the b
 |-----------------------|------------------------|-----------------------|-------------------------|---------------------------|----------------------|
 | **CountVec + FCC**    | 0.59                   | 0.58                  | 0.58                    | 0.59                      | **0.11**             |
 | **TF-IDF + LR**       | 0.58                   | 0.59                  | 0.59                    | 0.58                      | 0.30                 |
+| **XLNet**             | 0.53                   | 0.52                  | 0.59                    | 0.53                      | 0.30                 |
 | **DistilBERT**        | **0.61**               | **0.60**              | **0.60**                | **0.61**                  | 0.22                 |
 | **KeyBERT + DistilBERT** | 0.60               | **0.60**              | **0.60**                | 0.60                      | **0.11**             |
-| **XLNet**             | 0.53                   | 0.52                  | 0.59                    | 0.53                      | 0.30                 |
 
 In comparison to GPT 3.5, which was prompted to classify text passages as either Democratic or Republican on 100 samples from Validation Dataset 1 (Senate and House Resolutions), my model achieved significantly higher accuracy in text classification. The chart below shows the effectiveness of my model at this task.
 
@@ -49,10 +49,10 @@ In comparison to GPT 3.5, which was prompted to classify text passages as either
 |---------------------------|----------------------|
 | **CountVec + FCC**        | 0.75                 |
 | **TF-IDF + LR**           | **0.78**             |
-| **DistilBERT**            | 0.77                 |
-| **KeyBERT + DistilBERT**  | **0.78**             |
 | **XLNet**                 | 0.55                 |
 | **ChatGPT 3.5**           | 0.63                 |
+| **DistilBERT**            | 0.77                 |
+| **KeyBERT + DistilBERT**  | **0.78**             |
 
 ## Folders
 #### Data
